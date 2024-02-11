@@ -1,0 +1,7 @@
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\bin\Debug\qq1labTests.exe.config
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\bin\Debug\qq1labTests.exe
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\bin\Debug\qq1labTests.pdb
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\obj\Debug\qq1labTests.csproj.AssemblyReference.cache
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\obj\Debug\qq1labTests.csproj.CoreCompileInputs.cache
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\obj\Debug\qq1labTests.exe
+D:\study\Computer Graphics\Control Of Quality\Control-Of-Quality\qq1labTests\obj\Debug\qq1labTests.pdb
