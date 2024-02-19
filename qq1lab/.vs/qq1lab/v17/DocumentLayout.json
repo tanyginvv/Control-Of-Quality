@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\study\\Computer Graphics\\Control Of Quality\\Control-Of-Quality\\qq1lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15EEC276-89A9-4F59-9204-69187AF69FDC}|qq1lab.csproj|d:\\study\\computer graphics\\control of quality\\control-of-quality\\qq1lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EEC276-89A9-4F59-9204-69187AF69FDC}|qq1lab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\study\\Computer Graphics\\Control Of Quality\\Control-Of-Quality\\qq1lab\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\study\\Computer Graphics\\Control Of Quality\\Control-Of-Quality\\qq1lab\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwCAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-11T16:25:53.098Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

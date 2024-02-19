@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace qq1labTests
 {
@@ -18,11 +13,15 @@ namespace qq1labTests
             StreamWriter writer = new StreamWriter(outputFile);
             while (!reader.EndOfStream)
             {
+
                 string input = reader.ReadLine();
                 string[] subs = input.Split(' ');
-                int a = int.Parse(subs[0]);
-                int b = int.Parse(subs[1]);
-                int c = int.Parse(subs[2]);
+                double a1;
+                double a2;
+                double a3;
+                double a = double.TryParse(subs[0], out a1) ? a1 : 0.0;
+                double b = double.TryParse(subs[1], out a2) ? a2 : 0.0;
+                double c = double.TryParse(subs[2], out a3) ? a3 : 0.0;
                 string type = subs[3];
 
                 Process process = new Process();
@@ -47,8 +46,10 @@ namespace qq1labTests
                     writer.WriteLine("> error");
                 }
             }
+            
             reader.Close();
             writer.Close();
+
         }
     }
 }
