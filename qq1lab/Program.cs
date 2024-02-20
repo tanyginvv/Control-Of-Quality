@@ -6,6 +6,8 @@ namespace qq1lab
     {
         static void Main(string[] args)
         {
+            if (args.Length == 3)
+            { 
                 double a1;
                 double a2;
                 double a3;
@@ -32,11 +34,18 @@ namespace qq1lab
                     }
                     else
                     {
-                        Console.WriteLine("неизвестнаяошибка");
+                        Console.WriteLine("нетреугольник");
                     }
                 }
-                catch (Exception) { Console.WriteLine("неизвестнаяошибка"); }
-
+                catch (Exception) 
+                { 
+                    Console.WriteLine("неизвестнаяошибка"); 
+                }
+            }
+            else 
+            {
+                Console.WriteLine("неизвестнаяошибка"); 
+            }
         }
     }
 }
