@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab6TV", "lab6TV\lab6TV.csproj", "{D1A85C7C-7B5D-47A2-A5E4-3E04E4D3C160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVTests", "TVTests\TVTests.csproj", "{3A28FC49-053A-4C23-8987-83FEC98ED4A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1A85C7C-7B5D-47A2-A5E4-3E04E4D3C160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A85C7C-7B5D-47A2-A5E4-3E04E4D3C160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A85C7C-7B5D-47A2-A5E4-3E04E4D3C160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A85C7C-7B5D-47A2-A5E4-3E04E4D3C160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A28FC49-053A-4C23-8987-83FEC98ED4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A28FC49-053A-4C23-8987-83FEC98ED4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A28FC49-053A-4C23-8987-83FEC98ED4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A28FC49-053A-4C23-8987-83FEC98ED4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD869DDA-683E-453C-B315-2E7F129448A6}
+	EndGlobalSection
+EndGlobal
