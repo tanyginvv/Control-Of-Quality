@@ -31,7 +31,7 @@ namespace ShopTests.UI.MakingOrder.Tests
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "..\\..\\Order\\Configs\\OrderCases.xml",
                     "TestNotAuthorized", DataAccessMethod.Sequential)]
-        public void MakeOrder()
+        public void MakeOrderValid()
         {
             var productLink = TestContext.DataRow["Link"].ToString();
             _webDriver.Navigate().GoToUrl($"{_url}{productLink}");
@@ -46,6 +46,32 @@ namespace ShopTests.UI.MakingOrder.Tests
                 new CustomerInfo(TestContext.DataRow["Login"].ToString() + DateTime.Now.ToString("hh-mm-ss"),
                                  TestContext.DataRow["Password"].ToString(), TestContext.DataRow["CustomerName"].ToString(),
                                  DateTime.Now.ToString("hh-mm-ss") + TestContext.DataRow["Email"].ToString(),
+                                 TestContext.DataRow["Address"].ToString(), TestContext.DataRow["Note"].ToString());
+
+            _makeOrderMethods.SubmitCustomerInfo(customerInfo);
+
+            Assert.AreEqual(TestContext.DataRow["Alert"].ToString(), _makeOrderMethods.GetOrderHeaderText(),
+                            "Expected to see text according to the user submit info text");
+        }
+
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "..\\..\\Order\\Configs\\OrderCases.xml",
+                    "TestAuthorized", DataAccessMethod.Sequential)]
+        public void MakeOrderInValid()
+        {
+            var productLink = TestContext.DataRow["Link"].ToString();
+            _webDriver.Navigate().GoToUrl($"{_url}{productLink}");
+
+            _makeOrderMethods.SetCurrentElement(_makeOrderMethods.GetSimpleCartElement());
+            var quantity = TestContext.DataRow["Quantity"].ToString();
+            _makeOrderMethods.AddProductToCart(int.Parse(quantity));
+
+            _makeOrderMethods.SwitchToCartPage(_url);
+
+            var customerInfo =
+                new CustomerInfo(TestContext.DataRow["Login"].ToString(),
+                                 TestContext.DataRow["Password"].ToString(), TestContext.DataRow["CustomerName"].ToString(),
+                                 TestContext.DataRow["Email"].ToString(),
                                  TestContext.DataRow["Address"].ToString(), TestContext.DataRow["Note"].ToString());
 
             _makeOrderMethods.SubmitCustomerInfo(customerInfo);
