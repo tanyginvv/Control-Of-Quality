@@ -46,6 +46,18 @@ availableCurrency.forEach(currency => {
     imposter.addRoute(responseCurrency);
 });
 
+const responseError = {
+    'uri': '/.*',
+    'verb': 'GET',
+    'res': {
+        'statusCode': 404,
+        'responseHeaders': { 'Content-Type': 'application/json' },
+        'responseBody': JSON.stringify({'Error': 'Invalid URL'}),
+    }
+};
+
+imposter.addRoute(responseError);
+
 mbHelper.startMbServer(2525)
     .then(() => {
         imposter.postToMountebank()

@@ -8,12 +8,12 @@
 		<TotalQuantity>1</TotalQuantity>
 		<TotalPrice>400</TotalPrice>
 		<Link>product/citizen-jp1010-00e</Link>
-		<Login>Rob</Login>
-		<Password>123456</Password>
-		<CustomerName>Alex</CustomerName>
-		<Email>Alexey@yandex.ru</Email>
-		<Address>addres</Address>
+		<Login>testValidUser11</Login>
+		<Password>testValidUser11</Password>
+		<CustomerName>User</CustomerName>
+		<Email>bjsdf2@mail.ru</Email>
+		<Address>address</Address>
 		<Note>комментарий</Note>
-		<Alert>Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа</Alert>
+		<Alert>Произошла ошибка</Alert>
 	</TestNotAuthorized>
 </TestData>

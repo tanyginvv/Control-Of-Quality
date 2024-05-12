@@ -35,7 +35,7 @@ internal class MakeOrderMethods : AddToCartMethods
                                _inputNoteXPath = By.XPath(".//textarea[@name='note']"),
                                _inputSubmitButtonXPath = By.XPath(".//button[@type='submit']"),
                                _modalMakeOrderButtonXPath = By.XPath("//a[@href='cart/view']"),
-                               _orderAlertXPath = By.XPath("//div[contains(@class,'alert')]");
+                               _orderAlertXPath = By.XPath("//h1");
 
     public MakeOrderMethods(IWebDriver webDriver) : base(webDriver)
     {
