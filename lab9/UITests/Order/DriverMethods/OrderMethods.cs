@@ -39,7 +39,6 @@ namespace UITests.Order.DriverMethods
                                    _orderHeaderXPath = By.XPath("//h1");
 
 
-
         public MakeOrderMethods(IWebDriver webDriver) : base(webDriver)
         {
             _webDriver = webDriver;
